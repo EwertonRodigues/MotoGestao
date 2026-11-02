@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto de Extensão · Etapa 1</title>
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script defer src="main.js"></script>
+  <style>[v-cloak]{display:none}</style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800">
+  <header class="max-w-3xl mx-auto px-4 py-6"><p class="text-sm font-semibold text-sky-700 mb-2">UNICARIOCA · ETAPA 1</p><h1 class="text-3xl font-bold text-sky-600">Projeto de Extensão</h1><p class="mt-1 text-slate-600">Base acessível e responsiva · Projeto MotoGestão.</p></header>
+  <main id="app" data-pratica class="max-w-3xl mx-auto px-4 pb-8" v-cloak>
+    <section aria-labelledby="sec-intro" class="bg-white rounded-xl shadow p-6"><h2 id="sec-intro" class="text-xl font-semibold">Boas-vindas</h2><p class="mt-2" aria-live="polite">Contador: <strong class="text-sky-700">{{ contador }}</strong></p><button class="mt-4 inline-flex items-center gap-2 rounded-lg bg-sky-600 px-4 py-2 text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400" aria-label="Somar um ao contador" @click="contador++">Somar +1</button></section>
+    
+  </main>
+  <section class="max-w-3xl mx-auto px-4" aria-label="Estado do ambiente"><div class="rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm"><p>Service worker: <strong id="sw-status">verificando…</strong></p><p class="mt-1 text-slate-600">Esqueleto PWA desta etapa: cache offline ainda não implementado.</p></div></section>
+  <footer class="max-w-3xl mx-auto px-4 py-8 text-sm text-slate-500"><p>© 2026 · Projeto de Extensão Front-end</p><a href="index.html" class="inline-block mt-3 text-sky-700 underline">Abrir o portal MotoGestão →</a></footer>
+  <noscript>Ative o JavaScript para usar o contador.</noscript>
+</body>
+</html>
